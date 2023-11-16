@@ -32,7 +32,7 @@ pipeline {
                 script {
                 withCredentials([string(credentialsId: '7842844601', variable: 'Docker')]) {
                     }
-            sh '7842844601/nodejsapplication-1.0'
+            sh '7842844601/node-1.0'
         }
             }   
         }
