@@ -32,7 +32,7 @@ pipeline {
                 script {
                 withCredentials([string(credentialsId: '7842844601', variable: 'Docker')]) {
                     }
-            sh 'docker push devopshint/node-app-1.0'
+            sh '7842844601/nodejsapplication-1.0'
         }
             }   
         }
