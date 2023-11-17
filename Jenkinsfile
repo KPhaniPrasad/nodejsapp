@@ -21,7 +21,7 @@ pipeline {
      stage('Build Node JS Docker Image') {
             steps {
                 script {
-                  sh 'docker build -t devopshint/node-app-1.0 .'
+                  sh 'docker build -t devopshint/node-app-1.0'
                 }
             }
         }
@@ -32,7 +32,7 @@ pipeline {
                 script {
                 withCredentials([string(credentialsId: '7842844601', variable: 'Docker')]) {
                     }
-            sh 'docker push 7842844601/node-1.0'
+            sh 'docker push 7842844601/node:latest'
         }
             }   
         }
